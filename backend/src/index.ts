@@ -35,7 +35,6 @@ app.use('/api/progress', progressRouter)
 // Health check
 app.get('/health', (_, res) => res.json({ status: 'ok', timestamp: new Date().toISOString() }))
 
-// Error handling
 app.use(errorHandler)
 
 app.listen(PORT, () => {
